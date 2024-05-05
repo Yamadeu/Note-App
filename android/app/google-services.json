@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "617100248967",
+    "firebase_url": "https://flutterfirebase-9aae9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "flutterfirebase-9aae9",
+    "storage_bucket": "flutterfirebase-9aae9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617100248967:android:f455e8356a5c5eebacb522",
+        "android_client_info": {
+          "package_name": "com.example.learning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_8xVvjTH5mBIw6VS6B8tbxI81FyD2Mfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617100248967:android:1b075636f3e9f52eacb522",
+        "android_client_info": {
+          "package_name": "com.note.note"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_8xVvjTH5mBIw6VS6B8tbxI81FyD2Mfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

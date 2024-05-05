@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+import 'package:note/pages/add_note.dart';
+import 'package:note/pages/authenticate.dart';
+import 'package:note/pages/edit_note.dart';
+import 'package:note/pages/register.dart';
+import 'package:note/pages/welcome.dart';
+import 'package:note/pages/home.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:note/pages/wrapper.dart';
+import 'package:note/serives/local_notification_service.dart';
+import 'firebase_options.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+void main() async {
+
+// ...
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize the notification plugin
+  await LocalNotificationService().setup();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  runApp(MaterialApp(
+      initialRoute: "/",
+      routes: {
+        "/" : (context) => Welcome(),
+        '/home' : (context) => Home(),
+        "/wrapper" : (context) => Wrapper(),
+        '/create' : (context) => AddNote(),
+        '/edit' : (context) => EditNote(),
+      },
+    )
+  );
+}
